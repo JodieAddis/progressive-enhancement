@@ -1,0 +1,134 @@
+/*Personnalisation des paragraphes et liens*/
+p {
+    color: rgb(219, 208, 201);
+    font-family: serif;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+    color: rgb(166, 0, 192);
+    font-weight: 700;
+}
+/*design lien survolé*/
+a:hover{
+    font-size: 18px;
+    color: rgb(193, 3, 222) ;
+}
+/*Design lien visité*/
+a:visited{
+    color: rgb(126, 72, 27);
+}
+
+/*.....*/
+body{
+    max-width: 90%;
+    background: linear-gradient(90deg, rgb(82, 138, 189), rgb(20, 90, 84));
+    margin: auto;
+    background-image: url(./images/protoreaster\ lincki.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-size: cover;
+}
+blockquote{
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 160%;
+    background-color: rgb(162, 160, 160);
+    border-left: firebrick solid 3px;
+    padding-left: 30px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+cite{
+    font-style: italic;
+}
+.citation1{
+    border-left: rgb(93, 175, 85) solid 4px;
+}
+.citation2{
+    border-left: rgb(85, 90, 175) solid 4px;
+}
+.citation3{
+    border-left: rgb(175, 85, 91) solid 4px;
+}
+/*header:first-child{
+    background-color: yellowgreen;
+}*/
+header h1{
+    background-color: yellow;
+}
+.good, .bad {
+    /*Mettre une majuscule aux mots*/
+    text-transform: capitalize;
+    text-align: center;
+}
+.good{
+    color: red;
+}
+.bad{
+    color: green;
+}
+table{
+    border: black solid 1px;
+    width: 350px;
+    text-align: center;
+}
+/*sélection des lignes impaires*/
+tr:nth-child(odd){
+    background-color: rgb(255, 255, 255);
+}
+/*sélection des lignes paires*/
+tr:nth-child(even){
+    background-color:rgb(100, 100, 100) ;
+}
+
+/*Mettre une image à la place des puces dans la lite*/
+.Yes{
+    list-style-image: url(/assets/images/bien.png);
+}
+.No{
+    list-style-image: url(/assets/images/mal.png);
+}
+.Cat{
+    list-style-image: url(/assets/images/chat.png);
+}
+
+/*Mise en gras du premier paragraphe*/
+.first{
+    font-weight: 700;
+}
+
+/*Positionnement de la légende à coté de la photo en utilisant "float"*/
+/*figure{
+    float: right;
+    margin: 0;
+}*/
+
+/*Positionnement de la légende via "Flexbobo"*/
+figure{
+    display: flex;
+    justify-content: center;
+}
+
+/*Importation d'une police d'écriture*/
+@font-face {
+    font-family: Open;
+    src: url(/assets/font/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+body, a, strong, p{
+    font-family: Open;
+}
+
+.codage{
+    text-align: center;
+}
+
+
+.pic3, figure{
+    float: left;
+    margin-right: 50px;
+}
